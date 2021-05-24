@@ -743,50 +743,7 @@
 
 
 	</script>
-	<script>
-		// $(document).ready(function () {
-		// 	$("#btnSubmit").click(function () {
-		// 		var name = $("#name").value
-		// 		var email = $("#email").value
-		// 		Email.send({
-		// 			Host: "smtpout.secureserver.net",
-		// 			Username: "info@vsoftnow.in",
-		// 			Password: "Jithin@2021",
-		// 			To: 'jithinscodingstudio@gmail.com',
-		// 			From: "info@vsoftnow.in",
-		// 			Subject: "I will attend - " + name,
-		// 			Body: "<html><strong>Attending</strong><br></br><em>Name : " + name + "<br>Email : " + email + "</em></html>"
-		// 		}).then(
-		// 			message => alert(message)
-		// 		);
-		// 	})
-		// })
-		function sendEmail() {
-			var email = document.getElementById('email').value
-			var name = document.getElementById('name').value
-			return Email.send({
-				Host: "smtpout.secureserver.net",
-				Username: "info@vsoftnow.in",
-				Password: "Jithin@2021",
-				To: ['jithinscodingstudio@gmail.com'],
-				From: "info@vsoftnow.in",
-				Subject: "I will attend - " + name,
-				Body: "<html><strong>Attending</strong><br></br><em>Name : " + name + "<br>Email : " + email + "</em></html>"
-			}).then(
-				message => {
-					alert(message)
-					window.location.href = "/index.html"
-				}
-
-			);
-
-			// document.getElementById("btnSubmit").onclick() = function () {
-			// 	sendEmail
-			// }
-
-
-		}
-	</script>
+	
 </body>
 
 </html>
