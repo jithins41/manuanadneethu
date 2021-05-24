@@ -42,8 +42,7 @@
 	<link rel="shortcut icon" href="images/header.jpg" type="image/x-icon">
 	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet'
 		type='text/css'>
-	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet" />
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -72,12 +71,26 @@
 </head>
 
 <body>
-	<!-- <marquee class="bg-info text-light">Youtube live streaming will be start soon </marquee>-->
-	<!-- <iframe width="100%" height="720px" src="#" title="YouTube video player"
-		frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-		allowfullscreen></iframe> -->
+	<style>
+		iframe {
+			position: fixed;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			z-index: 9999;
+		}
+	</style>
+	<!-- <marquee class="bg-info text-light">Youtube live streaming will be start soon </marquee> -->
+	
 	<div class="fh5co-loader"></div>
-
+	
 	<div id="page">
 		<nav class="fh5co-nav" role="navigation">
 			<div class="container">
@@ -87,33 +100,14 @@
 					</div>
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
-							<!-- <li class="active"><a href="#">Go Live</a></li> -->
-							<!-- <li><a href="about.html">Story</a></li> -->
-							<!--<li class="has-dropdown">
-								<a href="services.html">Services</a>
-								<ul class="dropdown">
-									<li><a href="#">Web Design</a></li>
-									<li><a href="#">eCommerce</a></li>
-									<li><a href="#">Branding</a></li>
-									<li><a href="#">API</a></li>
-								</ul>
-							</li>
-							<li class="has-dropdown">
-								<a href="gallery.html">Gallery</a>
-								<ul class="dropdown">
-									<li><a href="#">HTML5</a></li>
-									<li><a href="#">CSS3</a></li>
-									<li><a href="#">Sass</a></li>
-									<li><a href="#">jQuery</a></li>
-								</ul>
-							</li>
-							<li><a href="contact.html">Contact</a></li> -->
+							<li class="active"><a href="https://youtu.be/lU9JtgZ8OVQ">Go Live</a></li>
 						</ul>
 					</div>
 				</div>
 
 			</div>
 		</nav>
+
 		<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/image-1.jpeg);"
 			data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
@@ -125,14 +119,16 @@
 								<h1>Manu &amp; Neethu</h1>
 								<h2>We Are Getting Married</h2>
 								<div class="simply-countdown simply-countdown-one"></div>
-								<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
+								<p><a href="live.html" class="btn btn-default btn-sm">Live</a></p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
-
+		<!-- <iframe src="https://www.youtube.com/embed/lU9JtgZ8OVQ" title="YouTube video player" frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+		allowfullscreen></iframe> -->
 		<div id="fh5co-couple">
 			<div class="container">
 				<div class="row">
@@ -510,7 +506,9 @@
 											</figure>
 											<span>BIJI THOMAS</span>
 											<blockquote>
-												<p>"You are a wonderful couple, perfect for each other. Praying your years together are full of love, joy and blessings."
+												<p>"You are a wonderful couple, perfect for each other. Praying your
+													years
+													together are full of love, joy and blessings."
 												</p>
 											</blockquote>
 										</div>
@@ -598,33 +596,10 @@
 			<div class="container">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Wedding functions is as per covid-19 Protocols</h2>
-						<!-- <p>Please Fill-up the form to notify you that you're attending. Thanks.</p> -->
-					</div>
-				</div>
-				<div class="row animate-box">
-					<!-- <div class="col-md-10 col-md-offset-1">
-						<form class="form-inline">
-							<div class="col-md-4 col-sm-4">
-								<div class="form-group">
-									<label for="name" class="sr-only">Name</label>
-									<input required type="name" class="form-control" id="name" placeholder="Name">
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-4">
-								<div class="form-group">
-									<label for="email" class="sr-only">Email</label>
-									<input required type="email" class="form-control" id="email" placeholder="Email">
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-4">
-								
-								<input type="button" id="btnSumbit" onclick="sendEmail()"
-									class="btn btn-default btn-block" value="I am attending">
+						<h2>Wedding function is as per Covid-19 Protocols</h2>
 
-							</div>
-						</form>
-					</div> -->
+					</div>
+
 				</div>
 				<!-- <div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
@@ -670,18 +645,18 @@
 							<small class="block">&copy; 2021 All Rights Reserved.</small>
 							<small class="block"> Developed for Manu and Neethu </small>
 						</p>
-						<!-- <p>
+						<p>
 						<ul class="fh5co-social-icons">
 							<li> Contact developer </li>
 							<li><a href="http://twitter.com/iamjithins"><i class="icon-twitter"></i></a></li>
 							<li><a href="http://facebook.com/iamjithins"><i class="icon-facebook"></i></a></li>
 							<li><a href="http://linkedin.com/in/iamjithins"><i class="icon-linkedin"></i></a></li>
 						</ul>
-						</p> -->
-						<p>
-							<small class="block text-light"><a href="http://freehtml5.co/"
-									target="_blank">FREEHTML5.co</a> </small>
 						</p>
+						<!-- <p>
+							<small class="block">Designed by <a href="http://freehtml5.co/"
+									target="_blank">FREEHTML5.co</a> </small>
+						</p> -->
 					</div>
 				</div>
 
@@ -724,8 +699,8 @@
 			year: d.getFullYear(),
 			month: d.getMonth() + 1,
 			day: d.getDate(),
-			hours: d.getHours() + 6,
-			minutes: d.getMinutes() - 30,
+			hours: d.getHours() + 5,
+			minutes: d.getMinutes() + 30,
 			seconds: d.getSeconds()
 		});
 
@@ -734,8 +709,8 @@
 			year: d.getFullYear(),
 			month: d.getMonth() + 1,
 			day: d.getDate(),
-			hours: d.getHours() + 6,
-			minutes: d.getMinutes(),
+			hours: d.getHours() + 5,
+			minutes: d.getMinutes() + 30,
 			seconds: d.getSeconds(),
 			enableUtc: false
 		});
@@ -743,7 +718,7 @@
 
 
 	</script>
-	
+
 </body>
 
 </html>
